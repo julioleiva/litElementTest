@@ -1,0 +1,21 @@
+{
+  "name": "lit_element_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@graviton/dropdown": "^1.1.5",
+    "lit-element": "^2.2.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
+  }
+}
