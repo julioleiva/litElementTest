@@ -1,6 +1,6 @@
 import { LitElement, html } from "lit-element";
 
-export class ListElement extends LitElement {
+export class ListRender extends LitElement {
   static get properties() {
     return {
       writers: { Type: Array }
@@ -14,16 +14,9 @@ export class ListElement extends LitElement {
 
   render() {
     return html`
+      <h3>Componente Lista (Renderizado de listas)</h1>
       <ul>
-        <!-- function hmtl`` anidado -->
-        ${this.writers.map(
-          writer =>
-            html`
-              <li>${writer}</li>
-            `
-        )}
-      </ul>
-    `;
+        ${this.writers.map(writer => html`<li>${writer}</li>`)}</ul>`;
   }
 }
-customElements.define("timestamp-todate", ListElement);
+customElements.define("list-render", ListRender);

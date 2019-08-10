@@ -1,21 +1,26 @@
 import { LitElement, html } from 'lit-element';
-import { throws } from 'assert';
+
 
 export class TimestampTodate extends LitElement {
     static get properties() {
         return {
             timeStamp: {type: String},
-            writers: {Type: Array}
         }
     }
 
     constructor(){
         super();
-        this.writers = ['Carver', 'Wloff', 'Cheever']
+        this.timeStamp = 0;
     }
 
     render() {
         return html`
+        <style>
+            h3 {
+                color: red;
+            }
+        </style>
+        <h3>Componente timeStamp(Inicializxación variables en contructor, métodos de componente)</h1>
             <span>${this.getDate(this.timeStamp)}</span>
         `
     };

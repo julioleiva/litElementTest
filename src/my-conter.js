@@ -19,7 +19,11 @@ export class MyCounter extends LitElement {
             button {
                 border-radius: 5px;
             }
+            h3 {
+                color: red;
+            }
         </style>
+        <h3>Componente Contador(Eventos, Componente anidado, shadowRoot.getElementById("feedback") )</h1>
           <div>Llevas ${this.counter} clicks.</div>
           <div><button @click="${this.increase}">+1</button></div>
           <div><button @click="${this.decrease}">-1</button></div>
