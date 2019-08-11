@@ -26,6 +26,10 @@ class ConditionalRender extends LitElement {
   render() {
     return html`
       <h3>Componente de Renderizado condicional con operador ternario</h3>
+      <button
+        @click=${this.toggleVisibility}>
+        ${this.visible ? "Ocultar" : "Mostrar" }
+      </button>
       ${this.visible
         ? html`
             <h1>Te veo</h1>
@@ -34,6 +38,9 @@ class ConditionalRender extends LitElement {
             <h1>No te veo</h1>
           `}
     `;
+  }
+  toggleVisibility(){
+    this.visible = !this.visible;
   }
 }
 
